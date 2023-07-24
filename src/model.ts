@@ -1,7 +1,7 @@
 interface Todo {
   id: number;
   todo: string;
-  isDOne: boolean;
+  isDone: boolean;
 }
 
 export default Todo;
