@@ -1,6 +1,6 @@
 .input {
   display: flex;
-  width: 90%;
+  width: 95%;
   position: relative;
   align-items: center;
 }
@@ -40,6 +40,12 @@
 }
 
 .input-submit:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
   box-shadow: 0 0 5px black;
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
 }

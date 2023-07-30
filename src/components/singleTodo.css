@@ -1,16 +1,22 @@
 .todo-single {
   display: flex;
-  width: 29%;
+  width: 40%;
   border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
-  background-color: yellowgreen;
+  background-color: orange;
 }
 .todo-single-text {
   flex: 1;
   padding: 5px;
   border: none;
   font-size: 20px;
+}
+
+.todo-single-edit-text {
+  flex: 1;
+  font-size: 18px;
+  border: none;
 }
 
 .todo-single-text:focus {
@@ -21,4 +27,30 @@
   margin-left: 10px;
   font-size: 25px;
   cursor: pointer;
+}
+
+.submit-icon {
+  background-color: orange;
+  padding: 0px;
+  border: none;
+}
+
+.icon:hover {
+  color: yellow;
+}
+
+@media (max-width: 1200px) {
+  .todo-single {
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .todo-single {
+    width: 90%;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
 }

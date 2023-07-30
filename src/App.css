@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;600;700&family=Neucha&display=swap');
 
+body {
+  background-color: #2f74c0;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +23,9 @@
   text-align: center;
 }
 @media (max-width: 800px) {
+  .App {
+    width: 100vw;
+  }
   .heading {
     margin: 15px 0;
     font-size: 35px;
