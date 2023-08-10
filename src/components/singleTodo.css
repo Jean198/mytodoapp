@@ -1,22 +1,31 @@
 .todo-single {
   display: flex;
-  width: 40%;
   border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
-  background-color: orange;
+  background-color: yellow;
+  transition: 0.2s;
+}
+
+.todo-single:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03);
+}
+
+.todo-single-remove {
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  transition: 0.2s;
+  background-color: green;
+  color: white;
 }
 .todo-single-text {
   flex: 1;
   padding: 5px;
   border: none;
   font-size: 20px;
-}
-
-.todo-single-edit-text {
-  flex: 1;
-  font-size: 18px;
-  border: none;
 }
 
 .todo-single-text:focus {
@@ -36,18 +45,16 @@
 }
 
 .icon:hover {
-  color: yellow;
+  color: orange;
 }
 
-@media (max-width: 1200px) {
-  .todo-single {
-    width: 40%;
-  }
-}
-
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .todo-single {
     width: 90%;
+  }
+
+  .input {
+    width: 95%;
   }
 
   .icon {

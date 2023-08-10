@@ -5,7 +5,7 @@
   flex-direction: column;
   padding: 15px;
   border-radius: 5px;
-  background-color: rgb(50, 195, 205);
+  background-color: rgb(235, 103, 80);
 }
 
 .container {
@@ -15,10 +15,39 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+.todos-heading {
+  font-size: 30px;
+  color: white;
+  font-weight: 900px;
+  letter-spacing: 2px;
+}
+
+.remove {
+  background-color: rgb(50, 195, 205);
+}
+
+.dragactive {
+  background-color: rgb(203, 103, 80);
+}
+
+.dragcomplete {
+  background-color: rgb(30, 175, 205);
+}
+
+@media (max-width: 1100px) {
+  .todos {
+    width: 45%;
+  }
+}
 
 @media (max-width: 700px) {
   .todos {
     width: 95%;
     margin-bottom: 10px;
+  }
+
+  .container {
+    width: 95%;
+    flex-direction: column;
   }
 }
